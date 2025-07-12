@@ -79,7 +79,7 @@ const Background = () => {
               initial={{y: 170}}
               animate={{y: 0}}
               transition={{duration: 2, delay: 1}}
-              className='text-black h-screen w-[0.1em] bg-[#AB9C81] m-auto'/>
+              className='text-black md:h-screen w-[0.1em] bg-[#AB9C81] m-auto'/>
         
 
           <div className='col-span-3 my-auto'>
@@ -93,11 +93,19 @@ const Background = () => {
             </div>
 
             <div className='text-black/50 py-5'>
-              <h3 className='font-bold text-lg text-black/80 uppercase'>Assistant Lecturer at St.Mary's University</h3>
+              <h3 className='font-bold text-lg text-black/80 uppercase'>Assistant Lecturer</h3>
               <h4 className=''>St.Mary's University, Addis Ababa</h4>
-              <h5 className='text-[0.8em] bg-[#AB9C81]/70 w-fit px-4 py-[0.3em] text-white rounded-full'>December 2023 to Present GC</h5>
+              <h5 className='text-[0.8em] bg-[#AB9C81]/70 w-fit px-4 py-[0.3em] text-white rounded-full'>December 2023 - June 2025 GC</h5>
 
               <p className='pt-5 text-[0.8em]'>As an Assistant Graduate, I lecture basic Computer Science courses to freshman students including Introduction to Computer Science, Emerging Technologies, Computer Application and Programming Fundamentals using C++ as a base Programming Language.</p>
+            </div>
+
+            <div className='text-black/50 py-5'>
+              <h3 className='font-bold text-lg text-black/80 uppercase'>Frontend Software Engineer</h3>
+              <h4 className=''>Tamcon Software Solution, Addis Ababa</h4>
+              <h5 className='text-[0.8em] bg-[#AB9C81]/70 w-fit px-4 py-[0.3em] text-white rounded-full'>June 2025 to Present GC</h5>
+
+              <p className='pt-5 text-[0.8em]'>As a Frontend Developer, I build websites designed using different popular frontend frameworks including Nextjs. I also got to experience on how to build animated betting games. </p>
             </div>
           </div>
       </div>
