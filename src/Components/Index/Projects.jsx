@@ -3,7 +3,6 @@ import YellowBar from '../Common/YellowBar'
 import { Link } from 'react-router-dom'
 import { FaGithub } from "react-icons/fa";
 import AnimationOnScroll from 'react-animate-on-scroll'
-import Masonry from 'react-masonry-component';
 
 import { useSpring, animated } from 'react-spring';
 import { ScrollAnimation } from 'react-animate-on-scroll';
