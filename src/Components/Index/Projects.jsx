@@ -29,8 +29,8 @@ const Projects = () => {
 
 
   return (
-    <AnimationOnScroll animateIn="animate__fadeIn">
-      <div className='p-16'>
+    <AnimationOnScroll animateIn="animate__fadeIn" >
+      <div className='p-16' id='works'>
         <h3 className='text-8xl font-banery font-bold text-black/50 '>Projects Completed</h3>
 
         <div className=''>
