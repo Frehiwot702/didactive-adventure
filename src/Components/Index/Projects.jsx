@@ -112,7 +112,7 @@ const Projects = () => {
             {/* <p className=' text-[0.9em] col-span-3'>Designed logos as a personal project using adobe illsutrator and design.</p> */}
           </div>
           <div>
-            <div className='py-5 grid-cols-2 gid md:grid-cols-5 gap-5'>
+            <div className='py-5 grid md:grid-cols-5 gap-5'>
               <img 
                 className='w-full h-full rounded-md object-cover my-auto'
                 src='./TMFWhite.jpg' />
@@ -136,7 +136,7 @@ const Projects = () => {
             {/* <p className=' text-[0.9em] col-span-3'>Designed logos as a personal project using adobe illsutrator and design.</p> */}
           </div>
           <div>
-            <div className='py-5 grid grid-cols-2 md:grid-cols-5 gap-5'>
+            <div className='py-5 grid md:grid-cols-5 gap-5'>
               <img 
                 className='w-full h-full rounded-md object-cover my-auto'
                 src='./coffee.png' />
