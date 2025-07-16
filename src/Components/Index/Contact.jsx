@@ -16,8 +16,8 @@ const Contact = () => {
         <h3 className='font-bold text-white text-7xl font-banery'>Get In touch!</h3>
         <h5 className='text-md text-white/50 font-bold uppercase'>Frehiowt'S Portifolio</h5>
 
-        <div className='w-full flex justify-between text-white font-normal pt-5'>
-          <div className='flex gap-5'>
+        <div className='w-full md:flex justify-between text-white font-normal pt-5'>
+          <div className='md:flex gap-5'>
             <h3 className='flex items-center gap-3'> <FaPhoneAlt fill='#AB9C81' size={20}/> +251 97900600 <br/> +251 941571366</h3>
             <h3 className='flex items-center gap-3'> <MdEmail fill='#AB9C81' size={20}/> frehiwot.tewodros112@gmail.com</h3>
           </div>

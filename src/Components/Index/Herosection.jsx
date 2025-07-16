@@ -16,16 +16,19 @@ const Herosection = () => {
   const scale = useTransform(scrollYProgress, [5,0],[810,0])
 
   return (
-    <div ref={container} className='w-full h-screen grid grid-cols-6 bg-no-repeat bg-contain bg-right' >
+    <div ref={container} className='w-full md:h-screen grid md:grid-cols-6 bg-no-repeat bg-contain bg-right' >
       {/* <HerosectionBg className=''/> */}
-      <div className='col-span-1 flex justify-start pl-10 '>
+      <div className='text-center text-lg font-semibold text-[#AB9C81] font-jetbrains md:hidden'>
+        <h3>Computer Scientist</h3>
+      </div>
+      <div className='hidden md:flex md:col-span-1  justify-start pl-10 '>
        <h3 className='text-center text-lg font-semibold text-[#AB9C81] font-jetbrains'>
         C <br/> O <br/> M <br/> P <br/> U <br/> T <br/> E <br/> R <br/>
         <br/>  
         S <br/> C <br/> I <br/> E <br/> N <br/> T <br/> I <br/> S <br/> T
        </h3>
       </div>
-      <div className='py-10 col-span-5 text-start z-20'>
+      <div className='py-10 md:col-span-5 text-start z-20'>
        
         {/* <div className=''>
           <h3 className=' text-3xl font-dancing'>Computer Scientist</h3>
@@ -36,19 +39,19 @@ const Herosection = () => {
             src='./singleWire.svg' className='w-52'/> 
         </div> */}
         <motion.div 
-          className='absolute text-2xl leading-tight -space-y-10 font-banery text-center'
+          className='absolute justify-center text-2xl leading-tight -space-y-10 font-banery text-center'
           initial={{y: 480}}
           animate={{y: 0}}
           transition={{duration:2, ease: "easeOut", type: "spring", stiffness: 150}}
         >
           <h3 
-            className='font-extrabold tracking-wide md:text-[8em] text-[#6F7B57] text-center'>FREHIWOT</h3>
+            className='font-extrabold tracking-wide text-[2em] md:text-[8em] text-[#6F7B57] text-center z-20'>FREHIWOT</h3>
           <motion.h3 
             initial={{scale:20}}
             animate={{scale:1}}
             style={{x: md}}
             transition={{duration:2, ease: "easeOut", type: "spring",scale}}
-            className='font-bold text-black md:text-[6em] pl-16 tracking-wide'>TEWODROS</motion.h3>
+            className='font-bold text-black text-[1em] md:text-[6em] pl-16 tracking-wide'>TEWODROS</motion.h3>
         </motion.div>
         
 

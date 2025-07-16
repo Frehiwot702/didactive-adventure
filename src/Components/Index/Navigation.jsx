@@ -27,18 +27,18 @@ const Navigation = () => {
     }
 
   return (
-    <nav className='flex pl-10 py-7'>
-        <ul className='w-full flex justify-center text-mediumGray tracking-wide font-semibold space-x-16 text-[1em] '>
-            <li className=''>
+    <nav className='flex md:pl-10 py-7 '>
+        <ul className='w-full flex justify-center text-mediumGray tracking-wide font-semibold space-x-5 md:space-x-16 text-[0.6em] md:text-[1em] '>
+            <li className='hover:text-[#6F7B57]'>
                 <Link to='#'>HOME</Link>
             </li>
-            <li>
+            <li className='hover:text-[#6F7B57]'>
                 <Link to='#about'>ABOUT ME</Link>
             </li>
-            <li>
+            <li className='hover:text-[#6F7B57]'>
                 <Link to='#works'>PROJECTS</Link>
             </li>
-            <li>
+            <li className='hover:text-[#6F7B57]'>
                 <Link to='#contact'>CONTACT</Link>
             </li>
         </ul>
