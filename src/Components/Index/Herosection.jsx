@@ -51,7 +51,7 @@ const Herosection = () => {
             animate={{scale:1}}
             style={{x: md}}
             transition={{duration:2, ease: "easeOut", type: "spring",scale}}
-            className='font-bold text-black text-[1em] md:text-[6em] pl-16 tracking-wide'>TEWODROS</motion.h3>
+            className='font-bold text-black text-[0.7em] md:text-[6em] pl-10 md:pl-16 tracking-wide'>TEWODROS</motion.h3>
         </motion.div>
         
 

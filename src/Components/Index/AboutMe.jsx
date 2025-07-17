@@ -48,7 +48,7 @@ const AboutMe = () => {
                       animate={{x: 0}}
                       transition={{duration: 1.5, delay:2.5}}
                       className='text-justify font-normal leading-relaxed text-sm'
-                    > Greetings! I'm Frehiwot Tewodros Assefa, an enthusiastic individual hailing from the vibrant culture of Ethiopia. Born in 2001, I embrace my Ethiopian roots with pride. As a passionate and determined woman, I bring a unique perspective to my work. 
+                    > Greetings! I'm Frehiwot Tewodros Assefa, an enthusiastic individual hailing from the vibrant culture of Ethiopia, I embrace my Ethiopian roots with pride. As a passionate and determined woman, I bring a unique perspective to my work. 
                         <br/> <br/> Currently based in Addis Ababa, I am eager to connect, learn, and contribute to diverse projects that inspire and make an impact. Let's embark on this journey together!</motion.p>
                   </motion.div>
                 </AnimationOnScroll>
@@ -71,13 +71,13 @@ const AboutMe = () => {
                     animateIn="animate__fadeIn"
                     className='col-span-2 space-y-10 flex flex-col text-center justify-center' >
                   <div className='col-span-2 space-y-10 flex flex-col text-center justify-center'>
-                    <div className='col-span-2 space-y-4 rounded-lg   '>
+                    <div className='col-span-2 space-y-4 rounded-lg '>
                         <motion.h3
                           initial={{x: 120}}
                           animate={{x: 0}}
                           transition={{duration: 1, delay:2}} 
                           className='md:text-5xl font-bold font-banery'>What I Do Do</motion.h3>
-                        <motion.ul>
+                        <motion.ul className='space-y-2'>
                           <motion.li  
                             initial={{x: 120}} 
                             animate={{x:0}}
@@ -128,7 +128,8 @@ const AboutMe = () => {
                 animate={{y: 0}}
                 transition={{duration: 1, delay:2.5}}
                 className=' py-10 md:flex'> 
-                <motion.h3 className='text-4xl md:text-7xl font-banery text-black/50'>Nickname: Dwight <span className='text-sm'>(The office)</span></motion.h3>
+                {/* <motion.h3 className='text-4xl md:text-7xl font-banery text-black/50'>Nickname: Dwight <span className='text-sm'>(The office)</span></motion.h3> */}
+                <motion.h3 className='text-4xl md:text-7xl font-banery text-black/50'>Nickname:</motion.h3>
                 <motion.div className='text-start md:flex w-full items-center py-3 md:space-x-5 font-banery'>
                   <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>D</span>etermined</h4>
                   <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>W</span>orker</h4>
@@ -143,18 +144,18 @@ const AboutMe = () => {
                 animate={{y: 0}}
                 transition={{duration: 1, delay:2}}
                 className='w-full col-span-4'>
-                  <div className='text-justify grid grid-cols-2 md:grid-cols-5 bg-green text-white rounded-br-full py-16 px-10 md:pl-24 md:pr-24 space-y-5'> 
+                  <div className='text-justify grid grid-cols-2 md:grid-cols-5 bg-green text-white rounded-3xl md:rounded-br-full py-16 px-10 md:pl-24 md:pr-24 space-y-5'> 
                     <div className='flex'>
-                      <h3 className='font-banery text-7xl font-bold text-[#E7DFCF]'>
+                      <h3 className='font-banery text-3xl md:text-7xl font-bold text-[#E7DFCF]'>
                         S<br/>K<br/>I<br/>L<br/>L<br/>S</h3>
-                      <h3 className='font-banery text-6xl font-bold text-[#E7DFCF]/40'>
+                      <h3 className='font-banery text-2xl md:text-6xl font-bold text-[#E7DFCF]/40'>
                         S<br/>K<br/>I<br/>L<br/>L<br/>S</h3>
-                      <h3 className='font-banery text-5xl font-bold text-[#E7DFCF]/20'>
+                      <h3 className='font-banery text-lg md:text-5xl font-bold text-[#E7DFCF]/20'>
                         S<br/>K<br/>I<br/>L<br/>L<br/>S</h3>
                     </div>
                       
                     <div className='md:col-span-4 grid md:grid-cols-6  text-center text-light text-gray-600 pr-16'>
-                      <div className='border-[#AB9C81] border-r-2 md:col-span-2 space-y-4'> 
+                      <div className='border-none md:border-[#AB9C81] border-r-2 md:col-span-2 space-y-4'> 
                         <h3 className='font-bold text-2xl'>Soft Skill</h3>
                         <ul type='none' className='text-sm text-white/80 space-y-2'>
                             <li>Patient & Humble</li>
@@ -164,7 +165,7 @@ const AboutMe = () => {
                             <li>Growth Mindset</li>
                         </ul>
                       </div>
-                      <div className='border-[#AB9C81] md:col-span-2 border-r-2 px-5 space-y-4'> 
+                      <div className='border-none md:border-[#AB9C81] md:col-span-2 border-r-2 px-5 space-y-4'> 
                         <h3 className='font-bold text-2xl'>Language Skill</h3>
                         <ul type='none' className='text-sm text-white/80 space-y-2'>
                             <li>Amharic </li>
@@ -200,7 +201,7 @@ const AboutMe = () => {
                         initial={{y: 90}} 
                         animate={{y: 0, textShadow: '2px 2px 5px rgba(0, 0, 0, 0.1)'}}
                         transition={{duration:1, delay: 1}}
-                        className='font-banery font-normal text-6xl md:text-8xl text-start text-green'
+                        className='font-banery font-normal text-5xl md:text-8xl text-start text-green'
                       >Creating Interactive and Engaging Digital Experiences using</motion.h3> 
                       <motion.div
                         initial={{y: 120}} 

@@ -61,11 +61,14 @@ const Projects = () => {
                 <img 
                   className='w-full h-1/3 object-cover object-left hover:scale-110 transition-all duration-150 delay-100'
                   src='./imsInside.png'/>
-                <Link to='https://maya.mesobmenu.com/home'>
-                  <img 
-                    className='w-full  object-cover object-left hover:scale-110 transition-all duration-150 delay-100'
-                    src='./simbatech.PNG'/>
-                </Link>
+                <div className='border-2 border-green rounded-md'>
+                  <div className='absolute w-fit rounded-full text-end bg-red-500 text-sm px-3 py-1 text-white font-bold m-3'>Live</div>
+                    <Link to='https://maya.mesobmenu.com/home'>
+                      <img 
+                        className='w-full object-cover object-left hover:scale-110 transition-all duration-150 delay-100'
+                        src='./simbatech.PNG'/>
+                    </Link>
+                </div>
             </div>
             <div className='flex flex-col gap-4 image-style'>
                 <img 
@@ -84,22 +87,29 @@ const Projects = () => {
                   src='./User UI.png'/>
             </div>
             <div className='col-span-2'>
-              <Link to='https://yts-movies-u2cr.vercel.app/'>
-                <img
-                  alt='YTS movies'
-                  className='h-96 w-full object-cover object-left-top hover:scale-110 transition-all duration-150 delay-100'
-                  src='./YTSmovie.png'
-                  />
-              </Link>
+               <div className='border-2 border-green rounded-md'>
+                <div className='absolute w-fit rounded-full text-end bg-red-500 text-sm px-3 py-1 text-white font-bold m-3'>Live</div>
+                  <Link to='https://yts-movies-u2cr.vercel.app/'>
+                    <img
+                      alt='YTS movies'
+                      className='h-96 w-full object-cover object-left-top hover:scale-110 transition-all duration-150 delay-100'
+                      src='./YTSmovie.png'
+                      />
+                  </Link>
+                </div>
             </div>
             <div className='col-span-3'>
-              <Link to='https://furnix-six.vercel.app/'>
-                <img
-                  alt='FURNX website - homepage'
-                  className='h-96 w-full object-cover object-left-top hover:scale-110 transition-all duration-150 delay-100'
-                  src='./furniture.png'
-                  />
-              </Link>
+              <div className='border-2 border-green rounded-md'>
+                <div className='absolute w-fit rounded-full text-end bg-red-500 text-sm px-3 py-1 text-white font-bold m-3'>Live</div>
+                <Link to='https://furnix-six.vercel.app/'>
+                  <img
+                    alt='FURNX website - homepage'
+                    className='h-96 w-full object-cover md:object-left-top hover:scale-110 transition-all duration-150 delay-100'
+                    src='./furniture.png'
+                    />
+                </Link>
+                
+              </div>
             </div>
             
             {/* <div className="absolute inset-0 bg-black opacity-20 rounded-md"></div> */}
