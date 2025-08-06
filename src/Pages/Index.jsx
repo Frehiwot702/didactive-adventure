@@ -7,10 +7,12 @@ import AdditionalInfo from '../Components/Index/AdditionalInfo'
 import Projects from '../Components/Index/Projects'
 import Illustrations from '../Components/Index/Illustrations'
 import Contact from '../Components/Index/Contact'
+import SplashCursor from '../Components/animations/SplashCursor'
 
 const Index = () => {
   return (
     <div className='w-full font-monto text-gray-900'>
+        <SplashCursor/>
         <Navigation />
         <Herosection />
         <AboutMe />
