@@ -6,7 +6,7 @@ import { TbBrandTelegram } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
-import { LiaTelegram } from "react-icons/lia";
+// import { LiaTelegram } from "react-icons/lia";
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -14,11 +14,11 @@ const Contact = () => {
     <div id='contact' className='pt-5'>
       <div className='bg-green py-10 mt-5 px-16 space-y-2'>
         <h3 className='font-bold text-white text-7xl font-banery'>Get In touch!</h3>
-        <h5 className='text-md text-white/50 font-bold uppercase'>Frehiowt'S Portifolio</h5>
+        <h5 className='text-md text-white/50 font-bold uppercase'>Frehiwot&apos;s Portifolio</h5>
 
         <div className='w-full md:flex justify-between text-white font-normal pt-5'>
           <div className='md:flex gap-5'>
-            <h3 className='flex items-center gap-3'> <FaPhoneAlt fill='#AB9C81' size={20}/> +251 97900600 <br/> +251 941571366</h3>
+            <h3 className='flex items-center gap-3'> <FaPhoneAlt fill='#AB9C81' size={20}/> +251 979006009 </h3>
             <h3 className='flex items-center gap-3'> <MdEmail fill='#AB9C81' size={20}/> frehiwot.tewodros112@gmail.com</h3>
           </div>
           <div className='flex gap-5'>
