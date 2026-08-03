@@ -1,28 +1,28 @@
-import React from 'react'
-import YellowBar from '../Common/YellowBar'
+// import React from 'react'
+// import YellowBar from '../Common/YellowBar'
 import { Link } from 'react-router-dom'
 import { FaGithub } from "react-icons/fa";
 import AnimationOnScroll from 'react-animate-on-scroll'
 
-import { useSpring, animated } from 'react-spring';
-import { ScrollAnimation } from 'react-animate-on-scroll';
-import ProjectCard from '../Common/ProjectCard'
-import ProjectCardReverse from '../Common/ProjectCardReverse'
+// import { useSpring, animated } from 'react-spring';
+// import { ScrollAnimation } from 'react-animate-on-scroll';
+// import ProjectCard from '../Common/ProjectCard'
+// import ProjectCardReverse from '../Common/ProjectCardReverse'
 
 
-const masonryOptions = {
-  transitionDuration: '0.4s',
-};
+// const masonryOptions = {
+//   transitionDuration: '0.4s',
+// };
 
-const items = [
-  { id: 1, image: './kz.png' },
-  { id: 2, image: './Bible hub.png' },
-  { id: 3, image: './kzFooter.png' },
-  { id: 4, image: './imsInside.png' },
-  { id: 5, image: './bdGuest.png' },
-  { id: 6, image: './index.png' },
+// const items = [
+//   { id: 1, image: './kz.png' },
+//   { id: 2, image: './Bible hub.png' },
+//   { id: 3, image: './kzFooter.png' },
+//   { id: 4, image: './imsInside.png' },
+//   { id: 5, image: './bdGuest.png' },
+//   { id: 6, image: './index.png' },
   
-];
+// ];
 
 
 const Projects = () => {
@@ -30,7 +30,7 @@ const Projects = () => {
 
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" >
-      <div className='p-16' id='works'>
+      <div className='p-16 md:mt-24' id='works'>
         <h3 className='text-6xl md:text-8xl font-banery font-bold text-black/50 '>Projects Completed</h3>
 
         <div className=''>

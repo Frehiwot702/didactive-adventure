@@ -1,134 +1,76 @@
-import { useRef } from 'react'
-// import YellowBar from '../Common/YellowBar'
-// import ET from 'country-flag-icons/react/3x2/ET'
-import {motion} from "framer-motion"
-// import TypingEffect from '../Common/TypingEffect'
-// import VerticalTypingEffect from '../Common/VerticalTypingEffect'
-import  AnimationOnScroll  from 'react-animate-on-scroll';
-import 'animate.css/animate.min.css';
-import { SiNextdotjs } from "react-icons/si";
-
-const AboutMe = () => {
-  const container = useRef(null)
-  // const {scrollXProgress, scrollYProgress} = useScroll({
-  //   target: container,
-  //   offset: ['start end', 'end start']
-  // })
-
-  return (
-    
-      <AnimationOnScroll
-        animateIn="animate__fadeIn" >
-        <div ref={container} id='about' className='p-8 md:p-16 space-y-5'>
-          <h3 className='text-lg text-center'>Frehiwot&apos;s Portifolio</h3>
-          <div className='bg-green py-1 rounded-sm'></div>
-          <h3 className='md:text-7xl font-bold bg-green py-4 text-gray text-center font-banery' >Designing products that people remember</h3>
-          <div className='bg-green py-1 rounded-sm'></div>
-          {/* <YellowBar title='ABOUT ME'/> */}
-          <div className='w-full gap-16 py-5 text-[#201A1A]'>
-            
-            <div className='col-span-4 space-y-8'> 
-                <div className='grid md:grid-cols-6 gap-16 text-start text-black/50 py-10'>
-                <AnimationOnScroll 
-                  animateIn="animate__fadeIn" className='col-span-2 space-y-4' >
-                  <motion.div 
-                    className='col-span-2 space-y-4'>
-                    <motion.h3 
-                      initial={{x: -170}}
-                      animate={{x: 0}}
-                      transition={{duration: 1, delay:2}}
-                      className='text-5xl font-bold items-center my-auto font-banery'>
-                        <motion.span 
-                          initial={{x: -170}}
-                          animate={{x: 0}}
-                          transition={{duration: 1, delay:2}}
-                          className='md:text-8xl font-banery'>Who</motion.span> I am</motion.h3>
-                    <motion.p
-                      initial={{x: -170}}
-                      animate={{x: 0}}
-                      transition={{duration: 1.5, delay:2.5}}
-                      className='text-justify font-normal leading-relaxed text-sm'
-                    > Greetings! I'm Frehiwot Tewodros Assefa, an enthusiastic individual hailing from the vibrant culture of Ethiopia, I embrace my Ethiopian roots with pride. As a passionate and determined woman, I bring a unique perspective to my work. 
-                        <br/> <br/> Currently based in Addis Ababa, I am eager to connect, learn, and contribute to diverse projects that inspire and make an impact. Let's embark on this journey together!</motion.p>
-                  </motion.div>
-                </AnimationOnScroll>
-                <AnimationOnScroll 
-                  animateIn="animate__fadeIn"  className='col-span-2 relative' >
-                  <motion.div
-                      initial={{rotate: 0}}
-                      animate={{rotate: 0}}
-                      transition={{duration:2, ease: "easeOut", type: "spring", stiffness: 150}}
-                      className='col-span-2 relative'>
-                    <motion.img 
-                      initial = {{y: 192}}
-                      animate={{y:0}}
-                      transition={{duration: 1.5, delay: 2, ease: 'easeIn', type: 'spring', damping: 3}}
-                      src='./profile11.jpg' 
-                      className=' w-[18em] h-[30em] rounded-t-full  m-auto object-center object-cover '/>
-                  </motion.div>
-                </AnimationOnScroll>
-                <AnimationOnScroll 
-                    animateIn="animate__fadeIn"
-                    className='col-span-2 space-y-10 flex flex-col text-center justify-center' >
-                  <div className='col-span-2 space-y-10 flex flex-col text-center justify-center'>
-                    <div className='col-span-2 space-y-4 rounded-lg '>
-                        <motion.h3
-                          initial={{x: 120}}
-                          animate={{x: 0}}
-                          transition={{duration: 1, delay:2}} 
-                          className='md:text-5xl font-bold font-banery'>What I specialize in</motion.h3>
-                        <motion.ul className='space-y-2'>
-                          <motion.li  
-                            initial={{x: 120}} 
-                            animate={{x:0}}
-                            transition={{duration:1, delay:2.5, ease: 'easeInOut'}}
-                            className='bg-[#cfcdc371] rounded-full border border-[#AB9C81] py-3 px-4 '>
-                            <motion.h3 className='text-[#AB9C81] font-bold text-lg'>Web Development</motion.h3>
-                            <motion.h3 className='text-[0.8em]'>Build interactive and responsive websites using React as base.</motion.h3>
-                          </motion.li>
-                          {/* <motion.li 
-                            initial={{x: 120}} 
-                            animate={{x:0}}
-                            transition={{duration:1, delay:3, ease: 'easeInOut'}}
-                            className='bg-[#cfcdc371] rounded-full border border-[#AB9C81] py-3 px-4 '>
-                            <h3 className='text-[#AB9C81] font-bold text-lg'>Mobile App Development</h3>
-                            <h3 className='text-[0.8em]'>Build interactive and user-friendly mobile applications using React-Native and Java.</h3>
-                          </motion.li> */}
-                          <motion.li 
-                            initial={{x: 120}} 
-                            animate={{x:0}}
-                            transition={{duration:1, delay:3.5, ease: 'easeInOut'}}
-                            className='bg-[#cfcdc371] rounded-full border border-[#AB9C81] py-3 px-4 '>
-                            <h3 className='text-[#AB9C81] font-bold text-lg'>UI/UX Design</h3>
-                            <h3 className='text-[0.8em]'>Create UI for apps that are user-friendly and consider the user when using the app.</h3>
-                          </motion.li>
-                          <motion.li
-                            initial={{x: 120}} 
-                            animate={{x:0}}
-                            transition={{duration:1, delay:4, ease: 'easeInOut'}} 
-                            className='bg-[#cfcdc371] rounded-full border border-[#AB9C81] py-3 px-4 '>
-                            <h3 className='text-[#AB9C81] font-bold text-lg'>Logo, 3D & Illustrations </h3>
-                            <h3 className='text-[0.8em]'>Create UI for apps that are user-friendly and consider the user when using the app.</h3>
-                          </motion.li>
-                          <li>
-                            <button className='w-fit px-10 rounded-full bg-[#6F7B57] py-2 font-bold tracking-wide text-sm text-white hover:bg-white hover:text-[#6F7B57] border border-[#6F7B57]'> DOWNLOAD RESUME</button>
-                          </li>
-                        </motion.ul>
-                    </div>
-                      
-                  </div>
-                </AnimationOnScroll>
-                  
-                </div>
-            </div>
-            <AnimationOnScroll 
+<AnimationOnScroll 
               animateIn="animate__fadeIn">
-              
+              <motion.div 
+                initial={{y: 170}}
+                animate={{y: 0}}
+                transition={{duration: 1, delay:2.5}}
+                className=' py-10 md:flex'> 
+                {/* <motion.h3 className='text-4xl md:text-7xl font-banery text-black/50'>Nickname: Dwight <span className='text-sm'>(The office)</span></motion.h3> */}
+                <motion.h3 className='text-4xl md:text-7xl font-banery text-black/50'>Nickname:</motion.h3>
+                <motion.div className='text-start md:flex w-full items-center py-3 md:space-x-5 font-banery'>
+                  <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>D</span>etermined</h4>
+                  <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>W</span>orker</h4>
+                  <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>I</span>ntense</h4>
+                  <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>G</span>ood Worker</h4>
+                  <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>H</span>ard Worker</h4>
+                  <h4 className='items-center text-sm'><span className='text-3xl md:text-5xl font-bold text-green'>T</span>errific</h4>
+                </motion.div>
+              </motion.div> 
               <motion.div
                 initial={{y: 200}}
                 animate={{y: 0}}
                 transition={{duration: 1, delay:2}}
-                className='w-full col-span-4'> 
+                className='w-full col-span-4'>
+                  <div className='text-justify grid grid-cols-2 md:grid-cols-5 bg-green text-white rounded-3xl md:rounded-br-full py-16 px-10 md:pl-24 md:pr-24 space-y-5'> 
+                    <div className='flex'>
+                      <h3 className='font-banery text-3xl md:text-7xl font-bold text-[#E7DFCF]'>
+                        S<br/>K<br/>I<br/>L<br/>L<br/>S</h3>
+                      <h3 className='font-banery text-2xl md:text-6xl font-bold text-[#E7DFCF]/40'>
+                        S<br/>K<br/>I<br/>L<br/>L<br/>S</h3>
+                      <h3 className='font-banery text-lg md:text-5xl font-bold text-[#E7DFCF]/20'>
+                        S<br/>K<br/>I<br/>L<br/>L<br/>S</h3>
+                    </div>
+                      
+                    <div className='md:col-span-4 grid md:grid-cols-6  text-center text-light text-gray-600 pr-16'>
+                      <div className='border-none md:border-[#AB9C81] border-r-2 md:col-span-2 space-y-4'> 
+                        <h3 className='font-bold text-2xl'>Soft Skill</h3>
+                        <ul type='none' className='text-sm text-white/80 space-y-2'>
+                            <li>Patient & Humble</li>
+                            <li>Planning & Scheduling </li>
+                            <li>Attention to detail</li>
+                            <li>Communication & Teamwork </li> 
+                            <li>Growth Mindset</li>
+                        </ul>
+                      </div>
+                      <div className='border-none md:border-[#AB9C81] md:col-span-2 border-r-2 px-5 space-y-4'> 
+                        <h3 className='font-bold text-2xl'>Language Skill</h3>
+                        <ul type='none' className='text-sm text-white/80 space-y-2'>
+                            <li>Amharic </li>
+                            <li>English</li>
+                            <li>Korean (Beginner) </li> 
+                        </ul>
+                      </div>
+                      <div className='md:col-span-2 space-y-4'> 
+                        <h3 className='font-bold text-2xl'>Technical Skill</h3>
+                        <ul type='none' className='text-sm text-white/80 space-y-2'>
+                            <li>Web Development</li>
+                            <li>Mobile App Development </li> 
+                            <li>Prototypiing</li>
+                            <li>Ms Word, Excel, Power Point </li>
+                        </ul>
+                      </div>
+                      <div className='md:col-span-6 space-y-4'> 
+                        <h3 className='font-bold text-2xl'>Certificates</h3>
+                        <ul type='none' className='text-sm text-white/80 space-y-2'>
+                            <li>JI-TAE World Taekwando Club - <span className='text-[#d6c4a3] font-bold'>2017 - 2019 GC</span></li>
+                            <li>Employment Readiness Training - Women In Self-Employment - <span className='text-[#d6c4a3] font-bold'>2023 GC</span> </li>
+                            <li>Flip Methodoloy - <span className='text-[#d6c4a3] font-bold'>2024 GC</span></li> 
+                            <li>Educational Measurement, Asssessment, Evaluation - <span className='text-[#d6c4a3] font-bold'>2025 GC</span> </li>
+                        </ul>
+                      </div>
+                                                                                                                                
+                    </div>
+                  </div>
 
                   <AnimationOnScroll animateIn="animate__fadeIn">
                     <div className='text-justify font-bold py-32 space-y-10'> 
@@ -200,11 +142,3 @@ const AboutMe = () => {
                         
               </motion.div>
             </AnimationOnScroll>
-          </div>
-        </div>
-      </AnimationOnScroll>
-   
-  )
-}
-
-export default AboutMe
